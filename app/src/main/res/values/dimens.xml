@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">22sp</dimen>
+    <dimen name="padding_rad">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="min_height">61dp</dimen>
+    <dimen name="padding_medium">20dp</dimen>
+</resources>

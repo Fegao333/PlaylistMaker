@@ -1,19 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="@dimen/padding_rad"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        android:gravity="center_vertical"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/ic_search"
+        app:iconPadding="@dimen/padding_small"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        android:text="@string/app_search"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        app:drawableTint="@color/black"
+        app:cornerRadius="@dimen/padding_rad"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/media"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:backgroundTint="@color/white"
+    android:text="@string/app_mediateca"
+    android:textColor="@color/black"
+    android:textSize="@dimen/text_size"
+        app:icon="@drawable/ic_media"
+        app:iconTint="@color/black"
+        app:iconPadding="@dimen/padding_small"
+        app:iconGravity="textStart"
+        app:cornerRadius="@dimen/padding_rad"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:backgroundTint="@color/white"
+        android:text="@string/app_settings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        app:icon="@drawable/ic_settings"
+        app:iconTint="@color/black"
+        app:iconPadding="@dimen/padding_small"
+        app:iconGravity="textStart"
+        app:cornerRadius="@dimen/padding_rad"
+        android:textAllCaps="false"/>
+</LinearLayout>
