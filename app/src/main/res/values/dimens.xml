@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="padding_rad">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="min_height">61dp</dimen>
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="corner_radius_none">0dp</dimen>
+    <dimen name="padding_12dp_primary">12dp</dimen>
+    <dimen name="padding_24dp">24dp</dimen>
+</resources>
