@@ -1,0 +1,20 @@
+val supportButton = findViewById<Button>(R.id.support_button)
+supportButton.setOnClickListener {
+    val support_body = getString(R.string.support_mail_body)
+    val support_main = getString(R.string.support_mail_main)
+    val emailAddress = getString(R.string.my_mail)
+
+    val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
+        data = Uri.parse("mailto:$emailAddress")
+        putExtra(Intent.EXTRA_SUBJECT, support_main)
+        putExtra(Intent.EXTRA_TEXT, support_body)
+    }
+
+    startActivity(emailIntent)
+}
+вот как выглядело мое исполнение , у меня вопрос , почему когда я пытался через getString() передать то у меня не получалось?
+а когда напрямую хардкодил и писал в самом PutExtra "Сообщение разработчкичам и разработчицам приложения Playlist Maker" то это срабатывало , в чем разница ?
+(вынес я в отдельные переменные уже на последних стадиях, пытаясь пофиксить я перебирал все возможные варианты почему так могло случиться)
+очень надеюсь что вы знаете в чем дело и объясните
+еще одна проблема, это серые кнопки Я УЖЕ ВСЕ ПЕРЕБРАЛ что бы это пофиксить , на разметке все нормально , белые кнопки , но по факту при запуске экрана настроек кнопки становятся серыми, я уже и пытался выносить и в стили и в отдельную переменную в теме этот цвет , ничего не помогает
+ИИ говорит что дело в Material3 , и предлагает фиксить через использование древней <android.widget.Button> , я чет не хочу и надеюсь что вы поможете и скажете в чем тут дело
