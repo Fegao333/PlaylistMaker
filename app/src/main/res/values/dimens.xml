@@ -10,4 +10,5 @@
     <dimen name="corner_radius_none">0dp</dimen>
     <dimen name="padding_12dp_primary">12dp</dimen>
     <dimen name="padding_24dp">24dp</dimen>
+    <dimen name="dimens_48dp">48dp</dimen>
 </resources>

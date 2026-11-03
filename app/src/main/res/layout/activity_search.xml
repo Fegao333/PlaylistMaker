@@ -7,11 +7,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingTop="10dp"
         android:paddingBottom="12dp">
+
+        <ImageButton
+            style="@style/BackButtonStyle"
+            android:id="@+id/backSearch"
+            android:src="@drawable/back_ic"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,8 +25,7 @@
             android:fontFamily="@font/ys_display_medium"
             android:text="@string/app_search"
             android:textColor="?attr/colorOnPrimary"
-            android:textSize="@dimen/text_size_22sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/text_size_22sp"/>
     </LinearLayout>
 
     <FrameLayout
@@ -37,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:background="@drawable/radius_search"
-            android:drawableStart="@drawable/ic_search"
+            android:drawableStart="@drawable/search_icon"
             android:drawablePadding="@dimen/padding_small"
             android:drawableTint="?attr/icon_color"
             android:fontFamily="@font/ys_display_medium"
@@ -57,60 +61,4 @@
             android:visibility="invisible"
             app:tint="?attr/icon_color" />
     </FrameLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
-
-            <LinearLayout
-                style="@style/bar_linear">
-
-                <ImageView
-                    style="@style/bar_icon"
-                    android:src="@drawable/ic_search" />
-
-                <TextView
-                    style="@style/bar_text_view"
-                    android:text="@string/app_search" />
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/bar_linear">
-
-                <ImageView
-                    style="@style/bar_icon"
-                    android:src="@drawable/ic_media" />
-
-                <TextView
-                    style="@style/bar_text_view"
-                    android:text="@string/app_media" />
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/bar_linear">
-
-                <ImageView
-                    style="@style/bar_icon"
-                    android:src="@drawable/ic_settings" />
-
-                <TextView
-                    style="@style/bar_text_view"
-                    android:text="@string/app_settings" />
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

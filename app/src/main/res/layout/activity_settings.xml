@@ -17,12 +17,9 @@
         android:paddingBottom="16dp">
 
         <ImageButton
+        style="@style/BackButtonStyle"
             android:id="@+id/backSetting"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/back_ic"
-            app:tint="?attr/colorOnPrimary" />
+            android:src="@drawable/back_ic"/>
 
         <TextView
 android:fontFamily="@font/ys_display_medium"

@@ -5,13 +5,8 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.button.MaterialButton
-
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_settings)
@@ -23,7 +18,7 @@ class SettingsActivity : AppCompatActivity() {
         }
         val agreementButton = findViewById<Button>(R.id.agreement_button)
         agreementButton.setOnClickListener {
-            val url = "https://yandex.ru/legal/practicum_offer/ru/"
+            val url = getString(R.string.practicum_offer)
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
         }
@@ -35,7 +30,7 @@ class SettingsActivity : AppCompatActivity() {
                 putExtra(Intent.EXTRA_SUBJECT, getString(R.string.support_mail_main))
                 putExtra(Intent.EXTRA_TEXT, getString(R.string.support_mail_body))
             }
-            startActivity(Intent.createChooser(emailIntent, "Отправить письмо"))
+            startActivity(Intent.createChooser(emailIntent, getString(R.string.send_mail)))
         }//AI Assistant, я пытался сам написать эту часть, но почему-то у меня не хотел метод putExtra() передавать сообщения, сет он клик, каким он был изначально, я оставил в файле README
         val shareButton = findViewById<Button>(R.id.share_button)
         shareButton.setOnClickListener {

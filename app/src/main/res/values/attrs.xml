@@ -5,4 +5,5 @@
     <attr name="icon_color" format="color" />
     <attr name="text_search" format="color" />
     <attr name="background_icon_search" format="color" />
+    <attr name="setting_ic_color" format="color"/>
 </resources>
