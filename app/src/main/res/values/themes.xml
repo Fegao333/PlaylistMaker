@@ -3,7 +3,24 @@
     <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="customBackground">@color/background</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="fontFamily">@font/ys_display_medium</item>
+        <item name="icon_color">@color/gray</item>
+        <item name="background_icon_search">@color/light_gray</item>
+        <item name="setting_ic_color">@color/gray</item>
+
     </style>
 
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
 </resources>

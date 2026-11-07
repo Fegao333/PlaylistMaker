@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SettingsButtonStyle">
+        <item name="backgroundTint">?android:attr/colorBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/min_height</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/corner_radius_none</item>
+        <item name="iconGravity">end</item>
+        <item name="fontFamily">@font/ys_display_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:backgroundTintMode">src_over</item>
+        <item name="iconTint">?attr/setting_ic_color</item>
+    </style>
+
+    <style name="MainButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="iconPadding">@dimen/padding_small</item>
+        <item name="iconGravity">textStart</item>
+        <item name="cornerRadius">@dimen/padding_rad</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_22sp</item>
+        <item name="fontFamily">@font/ys_display_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="iconTint">@color/black</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="bar_text_view">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nav_item_color</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+    </style>
+    <style name="bar_icon">
+        <item name="android:layout_width">@dimen/padding_24dp</item>
+        <item name="android:layout_height">@dimen/padding_24dp</item>
+        <item name="android:tint">@color/nav_item_color</item>
+    </style>
+    <style name="bar_linear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="BackButtonStyle">
+        <item name="android:layout_width">@dimen/dimens_48dp</item>
+        <item name="android:layout_height">@dimen/dimens_48dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="tint">?attr/colorOnPrimary</item>
+    </style>
+</resources>

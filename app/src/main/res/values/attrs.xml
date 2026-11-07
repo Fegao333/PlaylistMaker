@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customBackground" format="color" />//я хз как по другому сделать еще 1 кастомный
+    бекграунд)
+    <attr name="icon_color" format="color" />
+    <attr name="text_search" format="color" />
+    <attr name="background_icon_search" format="color" />
+    <attr name="setting_ic_color" format="color"/>
+</resources>
