@@ -33,8 +33,9 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp"
-        android:paddingTop="@dimen/padding_small"
-        android:paddingBottom="@dimen/padding_small">
+        android:paddingTop="@dimen/padding_8dp"
+        android:paddingBottom="@dimen/padding_8dp">
+
 
         <EditText
             android:id="@+id/searchEditText"
@@ -42,7 +43,7 @@
             android:layout_height="36dp"
             android:background="@drawable/radius_search"
             android:drawableStart="@drawable/search_icon"
-            android:drawablePadding="@dimen/padding_small"
+            android:drawablePadding="@dimen/padding_8dp"
             android:drawableTint="?attr/icon_color"
             android:fontFamily="@font/ys_display_medium"
             android:hint="@string/app_search"
@@ -61,4 +62,8 @@
             android:visibility="invisible"
             app:tint="?attr/icon_color" />
     </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tracksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

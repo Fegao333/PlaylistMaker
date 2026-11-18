@@ -1,3 +1,6 @@
+import org.gradle.kotlin.dsl.annotationProcessor
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -34,6 +37,10 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.remote.creation.compose)
+    implementation(libs.androidx.transform)
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
