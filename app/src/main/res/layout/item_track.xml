@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/min_height"
+    android:paddingVertical="@dimen/padding_8dp"
+    android:paddingHorizontal="@dimen/padding_12dp_primary"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/trackImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/padding_8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="?attr/colorOnPrimary"
+            android:id="@+id/trackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:textColor="?attr/setting_ic_color"
+            android:id="@+id/artistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/enterArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_24dp"
+        app:tint="?attr/setting_ic_color" />
+</LinearLayout>
